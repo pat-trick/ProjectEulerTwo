@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class ProjectEulerTwoTest {
 
   /**
-   * Tests various input values for the calculateEvenFibonnaciSum function.
+   * Tests various input values for the calculateEvenFibonacciSum function.
    *
    * @throws Exception An error message.
    */

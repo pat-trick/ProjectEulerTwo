@@ -1,7 +1,14 @@
 /**
  *  Created by patrick on 2/4/15.
  */
-public class ProjectEulerTwo {
+public final class ProjectEulerTwo {
+
+  /**
+   * Constructor for ProjectEulerTwo; currently blank.
+   */
+  private ProjectEulerTwo() {
+    // Not called.
+  }
 
   /**
    * Adds the sum of even Fibonnaci numbers up to 4 million.
@@ -9,9 +16,9 @@ public class ProjectEulerTwo {
    *
    * @param args ignored.
    */
-  public static void main(String[] args) {
-
-    int sum = calculateEvenFibonacciSum(4000000);
+  public static void main(final String[] args) {
+    final int testValue = 4000000;
+    int sum = calculateEvenFibonacciSum(testValue);
     System.out.println("Total is: " + sum);
   }
 
@@ -22,7 +29,7 @@ public class ProjectEulerTwo {
    * @param maxValue The maximum value to calculate up to.
    * @return The sum of all even Fibonnaci numbers up to maxValue.
    */
-  public static int calculateEvenFibonacciSum(int maxValue) {
+  public static int calculateEvenFibonacciSum(final int maxValue) {
 
     int previous = 1;
     int current = 2;
